@@ -1,0 +1,55 @@
+/* 全体のスタイリング */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+
+    /* 🌟 背景画像を適用（未来的 & テクノロジー系） */
+    background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* ヘッダー */
+header {
+    background: rgba(10, 25, 47, 0.9); /* ダークブルー（半透明） */
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* メインコンテンツ */
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* 背景を薄く透過 */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* ぼかし効果 */
+}
+
+/* ボタン */
+button {
+    background: #ff4b2b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff1c0a;
+}
+
+/* フッター */
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    background: rgba(10, 25, 47, 0.9);
+    color: white;
+    font-size: 14px;
+}
