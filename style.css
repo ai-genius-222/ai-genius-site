@@ -9,6 +9,9 @@ body {
     /* 🌟 背景画像を適用（未来的 & テクノロジー系） */
     background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center fixed;
     background-size: cover;
+    background-position: center; /* ✅ 画像を中央配置 */
+    background-attachment: fixed; /* ✅ スクロール時も固定 */
+    background-repeat: no-repeat; /* ✅ 繰り返しなし */
 }
 
 /* ヘッダー */
