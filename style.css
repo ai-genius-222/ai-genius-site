@@ -1,4 +1,4 @@
-/* 🌟 背景画像の設定（確実に適用されるバージョン） */
+/* 🌟 全体のスタイリング */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,20 +6,53 @@ body {
     color: #ffffff;
     text-align: center;
 
-    /* ✅ 確実に表示される背景画像（URLを直接指定） */
+    /* ✅ 確実に表示される背景画像 */
     background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* ✅ コンテンツを見やすくするための背景ボックス */
+/* 🌟 ヘッダー */
+header {
+    background: rgba(10, 25, 47, 0.9); /* ダークブルー（半透明） */
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 🌟 メインコンテンツ */
 .container {
     max-width: 800px;
     margin: 100px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* 背景を半透明にして、テキストが読みやすいようにする */
+    background: rgba(0, 0, 0, 0.5); /* 半透明の背景でテキストを見やすく */
     border-radius: 10px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌟 ボタン */
+button {
+    background: #ff4b2b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff1c0a;
+}
+
+/* 🌟 フッター */
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    background: rgba(10, 25, 47, 0.9);
+    color: white;
+    font-size: 14px;
 }
