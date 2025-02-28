@@ -7,7 +7,7 @@ body {
     text-align: center;
 
     /* 🌟 背景画像を適用（未来的 & テクノロジー系） */
-    background-image: url('https://source.unsplash.com/1600x900/?technology,futuristic');
+    background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
