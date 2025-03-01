@@ -1,58 +1,123 @@
-/* 🌟 全体のスタイリング */
+/* 🌟 グローバルスタイル */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1E3C72, #2A5298);
+    color: white;
     text-align: center;
-
-    /* ✅ 確実に表示される背景画像 */
-    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
-/* 🌟 ヘッダー */
-header {
-    background: rgba(10, 25, 47, 0.9); /* ダークブルー（半透明） */
-    padding: 20px;
-    font-size: 24px;
+/* 背景画像 */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1600x900/?technology,abstract') no-repeat center center/cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* コンテナのレイアウト */
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ヒーローセクション */
+.hero {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
     font-weight: bold;
 }
 
-/* 🌟 メインコンテンツ */
-.container {
-    max-width: 800px;
-    margin: 100px auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* 半透明の背景でテキストを見やすく */
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+p {
+    font-size: 1.2em;
 }
 
-/* 🌟 ボタン */
-button {
-    background: #ff4b2b;
-    color: white;
+/* ボタンのスタイル */
+.button {
+    margin-top: 20px;
     padding: 15px 30px;
-    border: none;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #ff1c0a;
-}
-
-/* 🌟 フッター */
-footer {
-    margin-top: 50px;
-    padding: 10px;
-    background: rgba(10, 25, 47, 0.9);
+    background: #FF6B6B;
     color: white;
-    font-size: 14px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #FF3B3B;
+}
+
+/* 記事セクション */
+#blog {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-align: left;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #FFD700;
+}
+
+article p {
+    color: #F8F9FA;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #1E90FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+article a:hover {
+    background: #007BFF;
+}
+
+/* フッター */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
